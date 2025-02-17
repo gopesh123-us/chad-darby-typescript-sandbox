@@ -1,0 +1,21 @@
+import { PI, Calculator, add } from "./mathUtils";
+import { hello } from "./index";
+import logMessage from "./logger";
+import Rectangle, { circleArea } from "./shapes";
+import * as Config from "./constants";
+import { getUtils } from "./index";
+import * as mathUtils from "./mathOperations";
+
+console.log(PI);
+console.log(add(2, 4));
+const calc = new Calculator();
+const result = calc.multiply(9, 10);
+console.log(result);
+console.log(hello("Gopi"));
+logMessage("network error");
+const rectShape = new Rectangle(6, 5);
+console.log(`area of rectangle: ${rectShape.area()}`);
+console.log(Config.APP_NAME);
+console.log(Config.APP_URL);
+console.log(Config.greet("Kirti"));
+getUtils();
