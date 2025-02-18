@@ -22,3 +22,11 @@ sports.forEach((sport, index) => {
 for (let [index, sport] of sports.entries()) {
   console.log(`Sport: ${sport} is at index ${index}`);
 }
+
+for (let sport of sports) {
+  if (sport === "Cricket") {
+    console.log(`${sport} '<= my favorite'`);
+  } else {
+    console.log(sport);
+  }
+}
